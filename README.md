@@ -1,6 +1,6 @@
 # A simple implementation of an architecture for an AppDelegate
 
-The App Delegate has many responsibilites by default including creash reporting, analytics, setting up the CoreData stack, notifications etc.
+The App Delegate has many responsibilites by default including crash reporting, analytics, setting up the CoreData stack, notifications etc.
 
 This breaks the Single Responsibility principle because the AppDelegate handles too many things.
 
