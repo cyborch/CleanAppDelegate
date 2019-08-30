@@ -17,6 +17,7 @@
 		CAAB9E4E22E936B00007ADFB /* CrashReporterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAB9E4D22E936B00007ADFB /* CrashReporterService.swift */; };
 		CAAB9E5122E936E30007ADFB /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAB9E5022E936E30007ADFB /* PersistenceService.swift */; };
 		CAAB9E5322E936F40007ADFB /* AnalyticsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAB9E5222E936F40007ADFB /* AnalyticsService.swift */; };
+		F214B51E23197F9E00C7D375 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F214B51D23197F9E00C7D375 /* AppDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		CAAB9E4D22E936B00007ADFB /* CrashReporterService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrashReporterService.swift; sourceTree = "<group>"; };
 		CAAB9E5022E936E30007ADFB /* PersistenceService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
 		CAAB9E5222E936F40007ADFB /* AnalyticsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsService.swift; sourceTree = "<group>"; };
+		F214B51B23197F9D00C7D375 /* AppServicesSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppServicesSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		F214B51D23197F9E00C7D375 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,12 +107,14 @@
 			isa = PBXGroup;
 			children = (
 				CAAB9E1F22E936820007ADFB /* AppDelegate.swift */,
+				F214B51D23197F9E00C7D375 /* AppDelegate.m */,
 				CAAB9E4F22E936B40007ADFB /* AppDelegate+Services */,
 				CAAB9E2122E936820007ADFB /* ViewController.swift */,
 				CAAB9E2322E936820007ADFB /* Main.storyboard */,
 				CAAB9E2622E936840007ADFB /* Assets.xcassets */,
 				CAAB9E2822E936840007ADFB /* LaunchScreen.storyboard */,
 				CAAB9E2B22E936840007ADFB /* Info.plist */,
+				F214B51B23197F9D00C7D375 /* AppServicesSwift-Bridging-Header.h */,
 			);
 			path = AppServicesSwift;
 			sourceTree = "<group>";
@@ -210,6 +215,7 @@
 				TargetAttributes = {
 					CAAB9E1B22E936820007ADFB = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1030;
 					};
 					CAAB9E2F22E936840007ADFB = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -275,6 +281,7 @@
 			files = (
 				CAAB9E2222E936820007ADFB /* ViewController.swift in Sources */,
 				CAAB9E5322E936F40007ADFB /* AnalyticsService.swift in Sources */,
+				F214B51E23197F9E00C7D375 /* AppDelegate.m in Sources */,
 				CAAB9E5122E936E30007ADFB /* PersistenceService.swift in Sources */,
 				CAAB9E4E22E936B00007ADFB /* CrashReporterService.swift in Sources */,
 				CAAB9E2022E936820007ADFB /* AppDelegate.swift in Sources */,
@@ -452,6 +459,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UW69ZFFDZJ;
 				INFOPLIST_FILE = AppServicesSwift/Info.plist;
@@ -461,6 +469,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.studeapps.AppServicesSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AppServicesSwift/AppServicesSwift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -470,6 +480,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UW69ZFFDZJ;
 				INFOPLIST_FILE = AppServicesSwift/Info.plist;
@@ -479,6 +490,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.studeapps.AppServicesSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AppServicesSwift/AppServicesSwift-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
